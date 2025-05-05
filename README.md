@@ -43,7 +43,7 @@ pip install pyserial pygame
 
 Then run the script:
 ```bash
-python Python/SLAMProcessing.py
+python Python/Visualization.py
 ```
 
 ## 🖥️ What You’ll See
