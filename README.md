@@ -19,7 +19,7 @@ This project demonstrates how to wirelessly transmit orientation data from a BNO
 
 | BNO055 Pin | ESP32 Pin |
 |------------|-----------|
-| VIN        | 3.3V      |
+| VIN        | 5.0V      |
 | GND        | GND       |
 | SDA        | GPIO 21   |
 | SCL        | GPIO 22   |
@@ -39,3 +39,19 @@ Install the required Python packages:
 
 ```bash
 pip install pyserial pygame
+```
+
+Then run the script:
+```bash
+python Python/SLAMProcessing.py
+```
+
+## 🖥️ What You’ll See
+The Python visualizer reads orientation data from the receiver ESP32 over serial and renders a real-time representation of the device’s orientation using Pygame (e.g., rotating a graphic or bar).
+
+## ⚠️ Notes
+Make sure only one program is accessing the serial port at a time.
+
+Calibration of the BNO055 may be required for accurate results.
+
+ESP-NOW works best when both ESP32 boards are within ~10 meters and in line-of-sight.
