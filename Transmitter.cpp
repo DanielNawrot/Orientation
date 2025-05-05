@@ -21,7 +21,9 @@ typedef struct struct_message
   float distUS;
 } struct_message;
 
-uint8_t broadCastAddress[] = {0xa0, 0xdd, 0x6c, 0x10, 0x5f, 0x44};
+// MUST CHECK FOR RECIEVER ADDRESS
+// Replace all NN with proper address
+uint8_t broadCastAddress[] = {0xNN, 0xNN, 0xNN, 0xNN, 0xNN, 0xNN};
 struct_message message;
 esp_now_peer_info peerInfo;
 void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status);
